@@ -808,10 +808,10 @@ MeshRenderer:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 1708479159}
+  - {fileID: 583686187}
   - {fileID: 410087041}
   - {fileID: 832575519}
   - {fileID: 1475241350}
   - {fileID: 164544885}
-  - {fileID: 1708479159}
-  - {fileID: 583686187}
   - {fileID: 473655659}

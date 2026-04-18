@@ -253,6 +253,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -336,8 +337,8 @@ MonoBehaviour:
   higlightObject: {fileID: 1795297182502515007}
   interactTextUI: {fileID: 1139597038687278795}
   interactImageUI: {fileID: 4206280460136705720}
-  showHiglight: 0
-  canDragDoor: 0
+  showHiglight: 1
+  canDragDoor: 1
 --- !u!1 &8806630126289650710
 GameObject:
   m_ObjectHideFlags: 0

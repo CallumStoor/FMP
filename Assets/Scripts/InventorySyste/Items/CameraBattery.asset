@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cc8ba770a8a65524994af3ff62d65b4c, type: 3}
-  m_Name: LanternFuel
+  m_Name: CameraBattery
   m_EditorClassIdentifier: 
-  itemName: LanternFuel
+  itemName: BatteryCamera
   energyLevel: 20
-  icon: {fileID: 21300000, guid: a394433605b0cf54e8cd21a09296db21, type: 3}
+  icon: {fileID: 21300000, guid: eb3e3d0ecca65884ea0e000a2aad7424, type: 3}
   isStackable: 1
   maxStackSize: 8
   hasItem: 0

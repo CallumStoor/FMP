@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Npc_1
   isAutoAdvance: 1
-  typeTextEffect: 0
+  typeTextEffect: 1
   useThisAutoAdvanceSpeed: 0
   autoAdvanceSpeed: 1
   dialogueLines:

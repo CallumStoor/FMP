@@ -19,6 +19,6 @@ MonoBehaviour:
   autoAdvanceSpeed: 20.8
   dialogueLines:
   - Hello My name is Npc_1
-  - I'm 18 yeras old
+  - I'm 18 years old
   - And I am a student
   audioClips: []

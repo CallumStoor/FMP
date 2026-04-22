@@ -338,7 +338,7 @@ MonoBehaviour:
   interactTextUI: {fileID: 1139597038687278795}
   interactImageUI: {fileID: 4206280460136705720}
   showHiglight: 1
-  canDragDoor: 1
+  canDragDoor: 0
 --- !u!1 &8806630126289650710
 GameObject:
   m_ObjectHideFlags: 0

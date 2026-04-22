@@ -47,7 +47,7 @@ GameObject:
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -122,6 +122,7 @@ MonoBehaviour:
   maxCameraPitch: 70
   minCameraPitch: -70
   headBob: {fileID: 4896909519798843805}
+  headBobAcceleration: 10
   idleBobAmp: 0.35
   idleBobFreq: 0.7
   walkBobAmp: 1
@@ -355,6 +356,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NoiseProfile: {fileID: 11400000, guid: bd9ce1c6d13539d4c9655f2fbbdc2675, type: 2}
   PivotOffset: {x: 0, y: 0, z: 0}
-  AmplitudeGain: 0.35
-  FrequencyGain: 0.7
+  AmplitudeGain: 0.3500001
+  FrequencyGain: 0.7000002
   m_NoiseOffsets: {x: 0, y: 0, z: 0}

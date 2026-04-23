@@ -1,4 +1,5 @@
 {
+    "version": 1,
     "name": "FpsAssets",
     "maps": [
         {
@@ -117,6 +118,15 @@
                     "name": "Key4",
                     "type": "Button",
                     "id": "6c7e0fb0-3cc8-45e4-85e9-4a5aff98ece3",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "KeyF",
+                    "type": "Button",
+                    "id": "16e68d06-c228-4f1e-8839-3a677110ee49",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -308,6 +318,17 @@
                     "processors": "",
                     "groups": ";Keyboard & Mouse",
                     "action": "Key4",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b794495c-3cb1-415b-97e3-d17e93a00f82",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard & Mouse",
+                    "action": "KeyF",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

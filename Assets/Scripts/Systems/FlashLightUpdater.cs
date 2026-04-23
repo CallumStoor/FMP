@@ -5,6 +5,7 @@ namespace FpsHorrorKit
 
     public class FlashLightUpdater : MonoBehaviour
     {
+        /*
         [SerializeField] private Item itemFlashLight;
         [SerializeField] private Image flashLightBatteryImage;
         [SerializeField] private float batteryDecraseSpeed = .25f;
@@ -49,6 +50,8 @@ namespace FpsHorrorKit
                     }
                 }
             }
+        
         }
+        */
     }
 }

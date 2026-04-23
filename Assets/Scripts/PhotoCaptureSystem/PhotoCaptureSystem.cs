@@ -6,6 +6,7 @@ namespace FpsHorrorKit
 
     public class PhotoCaptureSystem : MonoBehaviour
     {
+        /*
         public static PhotoCaptureSystem Instance { get; private set; }
 
         [Header("Inventory Item")]
@@ -120,5 +121,6 @@ namespace FpsHorrorKit
             yield return new WaitForSeconds(delay);
             currentDisplayImage.gameObject.SetActive(false);
         }
+        */
     }
 }

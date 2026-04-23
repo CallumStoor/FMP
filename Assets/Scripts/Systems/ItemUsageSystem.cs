@@ -6,6 +6,7 @@ namespace FpsHorrorKit
     {
         public static ItemUsageSystem Instance { get; private set; }
 
+        /*
         [Header("Items")]
         [SerializeField] private Item itemLantern;
         [SerializeField] private Item itemCamera;
@@ -210,5 +211,6 @@ namespace FpsHorrorKit
                 PhotoCaptureSystem.Instance.CapturePhoto();
             }
         }
+        */
     }
 }

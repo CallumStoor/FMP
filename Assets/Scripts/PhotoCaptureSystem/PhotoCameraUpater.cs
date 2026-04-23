@@ -5,6 +5,7 @@ namespace FpsHorrorKit
 
     public class PhotoCameraUpater : MonoBehaviour
     {
+        /*
         [Header("Item")]
         [SerializeField] private Item itemCamera;
         [SerializeField] private Image cameraBatteryImage;
@@ -51,5 +52,6 @@ namespace FpsHorrorKit
                 }
             }
         }
+        */
     }
 }

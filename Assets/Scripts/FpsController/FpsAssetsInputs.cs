@@ -16,20 +16,22 @@ namespace FpsHorrorKit
         [Header("Interaction Values")]
         public bool interact;
         public bool stopInteract;
-        public bool useFlashlight;
-        public bool useCamera;
+        //public bool useFlashlight;
+        //public bool useCamera;
         public bool fire;
+        public bool fKey;
 
         [Header("Item Usage Values")]
         public bool isPressed;
         public bool isSelectedItem;
-        public int itemIndex;
+        //public int itemIndex;
 
         [Header("Mouse Cursor Settings")]
         public bool cursorLocked = true;
         public bool cursorInputForLook = true;
 
-        int currentItemIndex = -1;
+        //int currentItemIndex = -1;
+        GameObject flashlight;
 
         private void Awake()
         {
@@ -39,6 +41,8 @@ namespace FpsHorrorKit
                 return;
             }
             Instance = this;
+
+            flashlight = GameObject.Find("Flashlight");
         }
 
         public void OnMove(InputValue value)
@@ -57,7 +61,7 @@ namespace FpsHorrorKit
         {
             SprintInput(value.isPressed);
         }
-
+        
         public void OnFire(InputValue value)
         {
             FireInput(value.isPressed);
@@ -73,6 +77,12 @@ namespace FpsHorrorKit
             StopInteractInput(value.isPressed);
         }
 
+        public void OnKeyF(InputValue value)
+        {
+            fKey = !fKey;
+            flashlight.SetActive(fKey);
+        }
+        /*
         public void OnUseFlashlight(InputValue value)
         {
             UseFlashlightInput(value.isPressed);
@@ -115,6 +125,7 @@ namespace FpsHorrorKit
                 isSelectedItem = false;
             }
         }
+        */
 
         // Metotlar
         private void MoveInput(Vector2 moveInput) => move = moveInput;
@@ -124,8 +135,10 @@ namespace FpsHorrorKit
         private void FireInput(bool fireInput) => fire = fireInput;
         private void InteractInput(bool interactInput) => interact = interactInput;
         private void StopInteractInput(bool stopInteractInput) => stopInteract = stopInteractInput;
+        /*
         private void UseFlashlightInput(bool useFlashlightInput) => useFlashlight = useFlashlightInput;
         private void UseCameraInput(bool useCameraInput) => useCamera = useCameraInput;
+        */
 
         private void OnApplicationFocus(bool hasFocus)
         {

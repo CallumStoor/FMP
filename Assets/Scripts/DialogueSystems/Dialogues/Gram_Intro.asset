@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34a9d1f6e1e346e4e9ba87ea88ac40b2, type: 3}
+  m_Name: Gram_Intro
+  m_EditorClassIdentifier: Assembly-CSharp::FpsHorrorKit.DialogueData
+  characterName: ???
+  isAutoAdvance: 0
+  typeTextEffect: 1
+  useThisAutoAdvanceSpeed: 1
+  autoAdvanceSpeed: 16
+  dialogueLines:
+  - Oh hey dear, what are you doing all the way out here?
+  - Oh thats terrible, you must of got all turned around looking for those to end
+    up here. It's too late for you to go searching again. You can stay here for the
+    time being
+  - Would you mind helping me out while your here?
+  audioClips: []

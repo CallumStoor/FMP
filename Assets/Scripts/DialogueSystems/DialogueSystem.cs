@@ -2,6 +2,8 @@ namespace FpsHorrorKit
 {
     using System;
     using System.Collections;
+    using System.Collections.Generic;
+    using System.Linq;
     using TMPro;
     using UnityEngine;
 
@@ -14,6 +16,7 @@ namespace FpsHorrorKit
         public TextMeshProUGUI dialogueText;
         public GameObject dialoguePanel;
         public CanvasGroup skipInfoImage;
+        
 
         [Header("Subtitle Speed Settings")]
         [Range(1, 50)]
@@ -52,6 +55,8 @@ namespace FpsHorrorKit
             audioSource = GetComponent<AudioSource>();
             dialoguePanel.SetActive(false);
             isDialogueFinished = true;
+
+
         }
         private void Update()
         {

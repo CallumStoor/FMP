@@ -6,9 +6,11 @@ using UnityEngine.Windows;
 public class MiniGameSystem : MonoBehaviour, IInteractable
 {
     [SerializeField] private string interactText = "Open MiniGame";
-    [SerializeField] private Image minigamePanel;
+    [SerializeField] private GameObject prefab;
+    [SerializeField] private Transform PrefabPosition;
 
     private FpsController fpsController;
+    private GameObject minigame;
 
     private void Awake()
     {
@@ -19,17 +21,20 @@ public class MiniGameSystem : MonoBehaviour, IInteractable
     {
         Debug.Log("Interacted with Game");
         fpsController.isInteracting = !fpsController.isInteracting; // Stop movement; 
-        Cursor.visible = true;
+        Cursor.visible = !Cursor.visible;
 
         //Interact Effects
 
-        minigamePanel.enabled = true;
+        minigame = Instantiate(prefab, PrefabPosition);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
     public void CloseMinigame()
     {
         fpsController.isInteracting = false;
         Cursor.visible = false;
+        Destroy(minigame);
     }
 
     public void Highlight()

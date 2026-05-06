@@ -88,7 +88,7 @@ namespace FpsHorrorKit
                 return;
             }
 
-            _input.cursorLocked = isInteracting;
+            _input.SetCursorState(!isInteracting);
 
             HeadBob();
 

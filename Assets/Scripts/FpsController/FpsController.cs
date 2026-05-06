@@ -88,6 +88,8 @@ namespace FpsHorrorKit
                 return;
             }
 
+            _input.cursorLocked = isInteracting;
+
             HeadBob();
 
             Vector2 input = _input.move;

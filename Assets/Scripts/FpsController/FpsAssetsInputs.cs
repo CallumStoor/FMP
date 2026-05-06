@@ -21,10 +21,12 @@ namespace FpsHorrorKit
         public bool fire;
         public bool fKey;
 
+        /*
         [Header("Item Usage Values")]
         public bool isPressed;
         public bool isSelectedItem;
         //public int itemIndex;
+        */
 
         [Header("Mouse Cursor Settings")]
         public bool cursorLocked = true;

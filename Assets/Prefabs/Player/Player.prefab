@@ -105,8 +105,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 528e941655f655d4eb6098b5c1e6e115, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 3
-  sprintSpeed: 3
+  walkSpeed: 2
+  sprintSpeed: 4
   rotationSpeed: 1
   accelerationRate: 10
   decelerationRate: 10
@@ -150,8 +150,6 @@ MonoBehaviour:
   stopInteract: 0
   fire: 0
   fKey: 1
-  isPressed: 0
-  isSelectedItem: 0
   cursorLocked: 1
   cursorInputForLook: 1
 --- !u!114 &4010050292815150317

@@ -19,27 +19,28 @@ public class MiniGameSystem : MonoBehaviour, IInteractable
 
     public void Interact()
     {
+        //Let the user interact with the UI elements
         Debug.Log("Interacted with Game");
-        fpsController.isInteracting = !fpsController.isInteracting; // Stop movement; 
-        Cursor.visible = !Cursor.visible;
-
-        //Interact Effects
-
-        minigame = Instantiate(prefab, PrefabPosition);
+        fpsController.isInteracting = true; // Stop movement; 
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+
+        //What happens once its been interacted with
+
+        minigame = Instantiate(prefab, PrefabPosition);
     }
 
-    public void CloseMinigame()
+    public void CloseMinigame() // call from minigame to close the game and enable movement
     {
-        fpsController.isInteracting = false;
-        Cursor.visible = false;
         Destroy(minigame);
+        fpsController.isInteracting = false; // enable movement
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     public void Highlight()
     {
-        PlayerInteract.Instance.ChangeInteractText(interactText);
+        PlayerInteract.Instance.ChangeInteractText(interactText); // Updates the UI text when overing over the object
     }
 
     public void HoldInteract() { }

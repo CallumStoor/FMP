@@ -33,4 +33,6 @@ public class MinigameHammer : MonoBehaviour
             hammerButton.transform.position = new Vector3(transform.position.x + randWidth, transform.position.y + randHeight, 0);
         }
     }
+
+    //subscribe to complete event to change gameobject to completed prefab 
 }

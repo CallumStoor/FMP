@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1613336856735246139
+--- !u!1 &7015382273200527577
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,48 +8,47 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 637415944234168965}
-  - component: {fileID: 1845878510387481230}
-  - component: {fileID: 7118813088912635727}
-  - component: {fileID: 9072315353527421879}
-  - component: {fileID: 861386023605858232}
+  - component: {fileID: 6031159722988354539}
+  - component: {fileID: 8400044910929366092}
+  - component: {fileID: 1291918806176637690}
+  - component: {fileID: 6025069699350518123}
   m_Layer: 0
-  m_Name: MiniGame Interact
+  m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &637415944234168965
+--- !u!4 &6031159722988354539
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1613336856735246139}
+  m_GameObject: {fileID: 7015382273200527577}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.00042130292, y: -0.02083349, z: 0.020213865, w: 0.99957854}
-  m_LocalPosition: {x: -1.363, y: -3.485, z: 76.849}
-  m_LocalScale: {x: 0.030068642, y: 0.5766, z: 0.39719114}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.01, y: -0.44, z: 1.54}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -2.388, z: 2.317}
---- !u!33 &1845878510387481230
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &8400044910929366092
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1613336856735246139}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &7118813088912635727
+  m_GameObject: {fileID: 7015382273200527577}
+  m_Mesh: {fileID: 4300000, guid: 1276437f6e50eee40bb491b6c68d486b, type: 3}
+--- !u!23 &1291918806176637690
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1613336856735246139}
+  m_GameObject: {fileID: 7015382273200527577}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -68,7 +67,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 2ef3b89bd5001e5449fdbc157f65381e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -80,7 +79,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -92,13 +91,13 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &9072315353527421879
+--- !u!65 &6025069699350518123
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1613336856735246139}
+  m_GameObject: {fileID: 7015382273200527577}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -111,20 +110,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1.7, z: 1.7}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &861386023605858232
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1613336856735246139}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85ab42f3d7eaf074388cb29d06ba45e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MiniGameSystem
-  interactText: 'Hammer missing paper [E]'
-  prefab: {fileID: 6274333492207954372, guid: 688197eb81e88c343bc1860a4afd732e, type: 3}
-  PrefabPosition: {fileID: 0}
+  m_Size: {x: 0.13492915, y: 2.4979472, z: 1.4997976}
+  m_Center: {x: -0.038543593, y: -0.02026391, z: -0.7209779}

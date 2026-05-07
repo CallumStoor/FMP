@@ -36,6 +36,10 @@ public class MiniGameSystem : MonoBehaviour, IInteractable
         fpsController.isInteracting = false; // enable movement
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+
+        // Events for completed minigame
+
+        GameEventsManager.instance.minigameEvents.minigameComplete();
     }
 
     public void Highlight()

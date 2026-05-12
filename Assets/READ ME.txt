@@ -1,0 +1,9 @@
+
+Currently working on: 
+- Fixing the prefab replacement issue where the screen is not destroying every time.
+
+
+BUGS:
+
+Prefab not replacing + screen not destroying every time
+Find where prefab is replaced / where incomplete prefab is set inactive

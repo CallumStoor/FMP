@@ -16,4 +16,6 @@ MonoBehaviour:
   displayName: Help the old lady put up some missing posters
   questPrerequisites: []
   questStepsPrefab:
-  - {fileID: 7096031885966513179, guid: fa53f21d9e7237741a5c70255f38729f, type: 3}
+  - {fileID: 3535134175069742022, guid: 573cf6db6bf881744bea846ed64bea81, type: 3}
+  introDialogue: {fileID: 11400000, guid: db0656f48092c2d4f8f79212fa3b87d6, type: 2}
+  completionDialogue: {fileID: 11400000, guid: 86c40bc4ea4640844ac85bbad8b0058a, type: 2}

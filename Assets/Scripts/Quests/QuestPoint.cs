@@ -1,15 +1,22 @@
 using FpsHorrorKit;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Collider))]
-public class QuestPoint : MonoBehaviour
+public class QuestPoint : MonoBehaviour, IInteractable
 {
+    [Header("Dialogue (Optional)")]
+    [SerializeField] private DialogueData dialogueData;
+
     [Header("Quest")]
-    [SerializeField] private string interactText = "Start Quest";
     [SerializeField] private QuestInfoSO questInfoForPoint;
 
-    private bool playerIsNear = false;
+    [Header("UI")]
+    [SerializeField] private string interactText = "Interact";
+
+    [Header("Config")]
+    [SerializeField] private bool startPoint = true;
+    [SerializeField] private bool finishPoint = true;
+
     private string questId;
     private QuestState currentQuestState;
 
@@ -21,52 +28,58 @@ public class QuestPoint : MonoBehaviour
     private void OnEnable()
     {
         GameEventsManager.instance.questEvents.onQuestStateChange += QuestStateChange;
-        GameEventsManager.instance.inputEvents.onSubmitPressed += SubmitPressed;
-        
     }
 
     private void OnDisable()
     {
         GameEventsManager.instance.questEvents.onQuestStateChange -= QuestStateChange;
-        GameEventsManager.instance.inputEvents.onSubmitPressed -= SubmitPressed; // 35:32
     }
 
-
-    public void SubmitPressed()
+    public void Interact()
     {
-        if(!playerIsNear)
+
+        if (dialogueData != null)
         {
-            return;
+            DialogueSystem.Instance.StartDialogue(
+                0,
+                new DialogueData[] { dialogueData }
+            );
         }
 
-        GameEventsManager.instance.questEvents.StartQuest(questId);
-        GameEventsManager.instance.questEvents.AdvanceQuest(questId);
-        GameEventsManager.instance.questEvents.FinishQuest(questId);
-        Debug.Log("interacted with quest");
+        // Still allow quest logic AFTER dialogue
+        if (currentQuestState == QuestState.CAN_START && startPoint)
+        {
+            GameEventsManager.instance.questEvents.StartQuest(questId);
+            Debug.Log($"Started quest: {questId}");
+        }
+        else if (currentQuestState == QuestState.CAN_FINISH && finishPoint)
+        {
+            GameEventsManager.instance.questEvents.FinishQuest(questId);
+            Debug.Log($"Finished quest: {questId}");
+        }
+    }
+
+    public void Highlight()
+    {
+        if (PlayerInteract.Instance != null)
+        {
+            PlayerInteract.Instance.ChangeInteractText(interactText);
+        }
+    }
+
+    public void UnHighlight()
+    {
+    }
+
+    public void HoldInteract()
+    {
     }
 
     private void QuestStateChange(Quest quest)
     {
-        if(quest.info.id.Equals(quest))
+        if (quest.info.id.Equals(questId))
         {
             currentQuestState = quest.state;
-            Debug.Log("Change quest state");
-        }
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            playerIsNear = true;
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            playerIsNear = false;
         }
     }
 }

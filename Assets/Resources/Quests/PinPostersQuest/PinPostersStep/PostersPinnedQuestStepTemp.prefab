@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5993989452430473169}
   - component: {fileID: 7098101683025786739}
   m_Layer: 0
-  m_Name: PostersPinnedQuestStep
+  m_Name: PostersPinnedQuestStepTemp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,3 +44,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88c0429a0fcb3434da7fa2b5a11b5f68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PinPostersQuestStep
+  requiredMinigameId: PostersMinigame

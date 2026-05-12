@@ -23,6 +23,7 @@ public class MinigameHammer : MonoBehaviour
 
         if (currentHits >= maxHits)
         {
+            hammerButton.transform.parent.gameObject.SetActive(false);
             minigameManager.CloseMinigame();
             return;
         }

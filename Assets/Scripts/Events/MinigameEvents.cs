@@ -3,12 +3,12 @@ using UnityEngine;
 
 public class MinigameEvents : MonoBehaviour
 {
-    public event Action onMinigameComplete;
-    public void minigameComplete()
+    public event Action<string> onMinigameComplete;
+    public void minigameComplete(string id)
     {
         if (onMinigameComplete != null)
         {
-            onMinigameComplete();
+            onMinigameComplete(id);
         }
     }
 }

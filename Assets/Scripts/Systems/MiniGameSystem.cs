@@ -6,8 +6,9 @@ using UnityEngine.Windows;
 public class MiniGameSystem : MonoBehaviour, IInteractable
 {
     [SerializeField] private string interactText = "Open MiniGame";
-    [SerializeField] private GameObject prefab;
-    [SerializeField] private Transform PrefabPosition;
+    [SerializeField] private GameObject panelPrefab;
+    [SerializeField] private Transform panelPrefabPosition;
+    [SerializeField] private GameObject completelPrefab;
 
     private FpsController fpsController;
     private GameObject minigame;
@@ -27,19 +28,26 @@ public class MiniGameSystem : MonoBehaviour, IInteractable
 
         //What happens once its been interacted with
 
-        minigame = Instantiate(prefab, PrefabPosition);
+        minigame = Instantiate(panelPrefab, panelPrefabPosition);
     }
 
-    public void CloseMinigame() // call from minigame to close the game and enable movement
+    public void CloseMinigame()
     {
+
+        GameEventsManager.instance.minigameEvents.minigameComplete("PostersMinigame");
+
         Destroy(minigame);
-        fpsController.isInteracting = false; // enable movement
+        minigame = null;
+
+        if (completelPrefab != null)
+        {
+            Instantiate(completelPrefab, transform.position, transform.rotation, GameObject.Find("Environment").transform);
+            gameObject.SetActive(false);
+        }
+
+        fpsController.isInteracting = false;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
-
-        // Events for completed minigame
-
-        GameEventsManager.instance.minigameEvents.minigameComplete();
     }
 
     public void Highlight()

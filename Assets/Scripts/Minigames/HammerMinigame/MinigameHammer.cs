@@ -5,7 +5,7 @@ public class MinigameHammer : MonoBehaviour
     [SerializeField] private GameObject hammerButton;
 
     private RectTransform rectTransform;
-    private MiniGameSystem minigameManager;
+    private MiniGameSystem owner;
 
 
     int currentHits = 0;
@@ -14,7 +14,11 @@ public class MinigameHammer : MonoBehaviour
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
-        minigameManager = GameObject.FindAnyObjectByType<MiniGameSystem>();
+    }
+
+    public void SetOwner(MiniGameSystem miniGameSystem)
+    {
+        owner = miniGameSystem;
     }
 
     public void Hit()
@@ -23,12 +27,14 @@ public class MinigameHammer : MonoBehaviour
 
         if (currentHits >= maxHits)
         {
+            // ensure game screen closes and close the minigame
             hammerButton.transform.parent.gameObject.SetActive(false);
-            minigameManager.CloseMinigame();
+            owner.CloseMinigame();
             return;
         }
         else
         {
+            // move button across screen
             float randWidth = Random.Range(rectTransform.rect.width * -1 / 2, rectTransform.rect.width / 2);
             float randHeight = Random.Range(rectTransform.rect.height * -1 / 2, rectTransform.rect.height / 2);
             hammerButton.transform.position = new Vector3(transform.position.x + randWidth, transform.position.y + randHeight, 0);

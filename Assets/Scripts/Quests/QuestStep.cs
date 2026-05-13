@@ -12,7 +12,7 @@ public abstract class QuestStep : MonoBehaviour
 
     protected virtual void OnEnable()
     {
-        if (GameEventsManager.instance == null) return;
+        if (GameEventsManager.instance == null) return; // check if GameEventsManager exists
 
         GameEventsManager.instance.minigameEvents.onMinigameComplete += HandleMinigameComplete;
     }
@@ -38,6 +38,7 @@ public abstract class QuestStep : MonoBehaviour
 
     protected void FinishQuestStep()
     {
+        // error check if there is a null or empty ID or if it isn't initialsed 
         if (isFinished || !isInitialized || string.IsNullOrEmpty(questId))
         {
             Debug.LogError("QuestStep invalid state");
@@ -52,12 +53,14 @@ public abstract class QuestStep : MonoBehaviour
 
     protected void ChangeState(string state, string status)
     {
+        // error check if there is a null or empty ID
         if (!isInitialized || string.IsNullOrEmpty(questId))
         {
-            Debug.LogError("QuestStep has NULL questId — step is invalid");
+            Debug.LogError("QuestStep questId is Null");
             return;
         }
 
+        // Change the quest step State
         GameEventsManager.instance.questEvents.QuestStepStateChange(
             questId,
             stepIndex,
@@ -67,7 +70,8 @@ public abstract class QuestStep : MonoBehaviour
 
     protected virtual void HandleMinigameComplete(string minigameId)
     {
-        if (minigameId != requiredMinigameId)
+        // check if it holds the same ID, to make sure all minigame events don't run when complete
+        if (minigameId != requiredMinigameId) 
             return;
 
         OnMinigameComplete();

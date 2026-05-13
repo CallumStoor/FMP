@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PinPostersQuest
   m_EditorClassIdentifier: Assembly-CSharp::QuestInfoSO
   <id>k__BackingField: PinPostersQuest
-  displayName: Help the old lady put up some missing posters
+  displayName: Pin the Posters
   questPrerequisites: []
   questStepsPrefab:
   - {fileID: 3535134175069742022, guid: 573cf6db6bf881744bea846ed64bea81, type: 3}

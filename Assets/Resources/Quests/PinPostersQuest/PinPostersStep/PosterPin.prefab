@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5106501402639278254}
   - component: {fileID: 2436810232957860193}
   - component: {fileID: 3023873277463821689}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MissingPoster (0)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85ab42f3d7eaf074388cb29d06ba45e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MiniGameSystem
-  interactText: 'Hammer Missing Poster [E]'
+  interactText: 'Pin Poster [E]'
   panelPrefab: {fileID: 6274333492207954372, guid: 688197eb81e88c343bc1860a4afd732e, type: 3}
   panelPrefabPosition: {fileID: 1711025600729241898}
   completePrefab: {fileID: 7417024866697929282, guid: da9e36b8f490dc8428ba5919e3f609b5, type: 3}
@@ -142,7 +142,7 @@ GameObject:
   - component: {fileID: 3236594065969010375}
   - component: {fileID: 2770261052190145317}
   - component: {fileID: 2845793753234583057}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MissingPoster (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -254,7 +254,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85ab42f3d7eaf074388cb29d06ba45e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MiniGameSystem
-  interactText: 'Hammer Missing Poster [E]'
+  interactText: 'Pin Poster [E]'
   panelPrefab: {fileID: 6274333492207954372, guid: 688197eb81e88c343bc1860a4afd732e, type: 3}
   panelPrefabPosition: {fileID: 1711025600729241898}
   completePrefab: {fileID: 7417024866697929282, guid: da9e36b8f490dc8428ba5919e3f609b5, type: 3}
@@ -307,10 +307,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PinPostersQuestStep
   requiredMinigameId: PostersMinigame
-  posters:
-  - {fileID: 1944874713954188213}
-  - {fileID: 3329218506665099329}
-  - {fileID: 7802296231643967531}
 --- !u!1 &3999484806711998826
 GameObject:
   m_ObjectHideFlags: 0
@@ -425,7 +421,7 @@ GameObject:
   - component: {fileID: 6864376999613053869}
   - component: {fileID: 4638708214383857819}
   - component: {fileID: 132994504036888334}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MissingPoster (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -537,7 +533,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85ab42f3d7eaf074388cb29d06ba45e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MiniGameSystem
-  interactText: 'Hammer Missing Poster [E]'
+  interactText: 'Pin Poster [E]'
   panelPrefab: {fileID: 6274333492207954372, guid: 688197eb81e88c343bc1860a4afd732e, type: 3}
   panelPrefabPosition: {fileID: 1711025600729241898}
   completePrefab: {fileID: 7417024866697929282, guid: da9e36b8f490dc8428ba5919e3f609b5, type: 3}

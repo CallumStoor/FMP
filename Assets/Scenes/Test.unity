@@ -469,7 +469,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::QuestPoint
   dialogueData: {fileID: 0}
   questInfoForPoint: {fileID: 11400000, guid: 1ea69a5a19ba84b4ba41158ff5e0ca37, type: 2}
-  interactText: Talk to ???
+  interactText: 'Talk to ??? [E]'
   startPoint: 1
   finishPoint: 1
 --- !u!1 &1109114255
@@ -485,7 +485,7 @@ GameObject:
   - component: {fileID: 1109114257}
   - component: {fileID: 1109114256}
   m_Layer: 0
-  m_Name: MonsterScene
+  m_Name: MonsterBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -577,13 +577,84 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1109114255}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.50192183, z: -0, w: 0.86491305}
-  m_LocalPosition: {x: -54.51, y: -4.01, z: 115.29}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
+  m_Father: {fileID: 1165244994}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1165244992
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1165244994}
+  - component: {fileID: 1165244993}
+  - component: {fileID: 1165244995}
+  m_Layer: 0
+  m_Name: Trigger 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &1165244993
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165244992}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 50, y: 10, z: 30}
+  m_Center: {x: 0, y: 0, z: -15}
+--- !u!4 &1165244994
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165244992}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.50393707, z: -0, w: 0.8637404}
+  m_LocalPosition: {x: -55.43, y: -4.429, z: 117.06}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1109114259}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -60.254, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -60.522, z: 0}
+--- !u!114 &1165244995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165244992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41becaad92c54984d976e6b76741167f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DelayTriggerMove
+  objectTransform: {fileID: 1109114259}
+  distance: 10
+  duration: 2
+  delay: 1
 --- !u!1001 &1177233050
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1667,5 +1738,5 @@ SceneRoots:
   - {fileID: 1371156246}
   - {fileID: 2002859051}
   - {fileID: 1527769885}
-  - {fileID: 1109114259}
   - {fileID: 1278136924}
+  - {fileID: 1165244994}

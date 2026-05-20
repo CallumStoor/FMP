@@ -46,7 +46,7 @@ public class QuestPoint : MonoBehaviour, IInteractable
             );
         }
 
-        // Still allow quest logic AFTER dialogue
+       
         if (currentQuestState == QuestState.CAN_START && startPoint)
         {
             GameEventsManager.instance.questEvents.StartQuest(questId);

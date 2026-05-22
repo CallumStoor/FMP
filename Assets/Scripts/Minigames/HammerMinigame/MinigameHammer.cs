@@ -6,6 +6,7 @@ public class MinigameHammer : MonoBehaviour
 
     private RectTransform rectTransform;
     private MiniGameSystem owner;
+    private AudioManager audioManager => AudioManager.instance;
 
 
     int currentHits = 0;
@@ -24,6 +25,7 @@ public class MinigameHammer : MonoBehaviour
     public void Hit()
     {
         currentHits++;
+        audioManager.Play("HammerHit");
 
         if (currentHits >= maxHits)
         {

@@ -136,7 +136,7 @@ namespace FpsHorrorKit
                 velocity.y = -2f;
             }
             velocity.y += gravity * Time.deltaTime;
-            characterController.Move(Vector3.up * velocity.y * Time.deltaTime);
+            characterController.Move(Time.deltaTime * velocity.y * Vector3.up);
         }
 
         private void HandleJumping()

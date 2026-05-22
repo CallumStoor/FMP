@@ -477,6 +477,10 @@ PrefabInstance:
       propertyPath: m_BounceIntensity
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1151249735855265964, guid: 6643704503cd0ff4c90cc8a681153469, type: 3}
+      propertyPath: m_Shadows.m_NearPlane
+      value: 0.69628143
+      objectReference: {fileID: 0}
     - target: {fileID: 1832303367712559635, guid: 6643704503cd0ff4c90cc8a681153469, type: 3}
       propertyPath: m_Name
       value: Flashlight

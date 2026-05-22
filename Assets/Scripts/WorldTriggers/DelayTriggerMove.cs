@@ -18,11 +18,6 @@ public class DelayTriggerMove : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-        // face player Script
-    }
-
     IEnumerator LerpPosition(Vector3 targetPosition, float duration)
     {
         yield return new WaitForSeconds(delay);

@@ -360,7 +360,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8011327896853317888, guid: 9771a198ce5adb445946c7134220ee92, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.79
+      value: 3.95
       objectReference: {fileID: 0}
     - target: {fileID: 8011327896853317888, guid: 9771a198ce5adb445946c7134220ee92, type: 3}
       propertyPath: m_LocalPosition.y
@@ -368,7 +368,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8011327896853317888, guid: 9771a198ce5adb445946c7134220ee92, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 78.31
+      value: 11.142
       objectReference: {fileID: 0}
     - target: {fileID: 8011327896853317888, guid: 9771a198ce5adb445946c7134220ee92, type: 3}
       propertyPath: m_LocalRotation.w
@@ -470,9 +470,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6646fd1a258509541940e7118f577835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::QuestPoint
-  dialogueData: {fileID: 0}
   questInfoForPoint: {fileID: 11400000, guid: 1ea69a5a19ba84b4ba41158ff5e0ca37, type: 2}
-  interactText: 'Talk to ??? [E]'
+  interactText: 'Talk to Old Lady [E]'
   startPoint: 1
   finishPoint: 1
 --- !u!1001 &1177233050
@@ -1044,7 +1043,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1569457211211252054, guid: 0d88603f36917b640995f0f93a2e9767, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.79
+      value: 3.95
       objectReference: {fileID: 0}
     - target: {fileID: 1569457211211252054, guid: 0d88603f36917b640995f0f93a2e9767, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1052,7 +1051,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1569457211211252054, guid: 0d88603f36917b640995f0f93a2e9767, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 78.31
+      value: 11.142
       objectReference: {fileID: 0}
     - target: {fileID: 1569457211211252054, guid: 0d88603f36917b640995f0f93a2e9767, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1082,9 +1081,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6238432657282876006, guid: 0d88603f36917b640995f0f93a2e9767, type: 3}
+      propertyPath: m_Intensity
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6315191148506379180, guid: 0d88603f36917b640995f0f93a2e9767, type: 3}
+      propertyPath: m_Intensity
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 7590908441964475915, guid: 0d88603f36917b640995f0f93a2e9767, type: 3}
       propertyPath: m_Name
       value: Main Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 8822789825851380365, guid: 0d88603f36917b640995f0f93a2e9767, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1518,6 +1529,10 @@ PrefabInstance:
       propertyPath: playerCamera
       value: 
       objectReference: {fileID: 1847586531}
+    - target: {fileID: 6164486875916260247, guid: 3e4263bb9d8588149ad8293611d2728f, type: 3}
+      propertyPath: avoidDistance
+      value: 28
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1661,9 +1676,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3239192996629696486, guid: f65baedfe44643542847f5918dc0f00c, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3396545135231532480, guid: f65baedfe44643542847f5918dc0f00c, type: 3}
       propertyPath: m_Name
       value: Cabin
+      objectReference: {fileID: 0}
+    - target: {fileID: 7392732027057080310, guid: f65baedfe44643542847f5918dc0f00c, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7454908032655786405, guid: f65baedfe44643542847f5918dc0f00c, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -1,8 +1,5 @@
-
-Currently working on: 
-Making more bugs and finding / creating a old lady model. s
-
-
-BUGS:
-
-Workds perfectly fine
+The controls are as follows:
+WASD - Move
+Mouse - Look around
+E - Interact with objects
+Space - Jump

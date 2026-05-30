@@ -4,9 +4,6 @@ using UnityEngine;
 [RequireComponent(typeof(Collider))]
 public class QuestPoint : MonoBehaviour, IInteractable
 {
-    [Header("Dialogue (Optional)")]
-    [SerializeField] private DialogueData dialogueData;
-
     [Header("Quest")]
     [SerializeField] private QuestInfoSO questInfoForPoint;
 
@@ -37,16 +34,6 @@ public class QuestPoint : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-
-        if (dialogueData != null)
-        {
-            DialogueSystem.Instance.StartDialogue(
-                0,
-                new DialogueData[] { dialogueData }
-            );
-        }
-
-       
         if (currentQuestState == QuestState.CAN_START && startPoint)
         {
             GameEventsManager.instance.questEvents.StartQuest(questId);

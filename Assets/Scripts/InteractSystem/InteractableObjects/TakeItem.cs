@@ -2,14 +2,12 @@ namespace FpsHorrorKit
 {
     using UnityEngine;
 
-    public class ITOKey : MonoBehaviour, IInteractable
+    public class TakeItem : MonoBehaviour, IInteractable
     {
-        public DoorSystem compatibleDoor;
-        [SerializeField] private string interactText = "Take key [E]";
+        [SerializeField] private string interactText = "Take Item [E]";
 
         public void Interact()
         {
-            compatibleDoor.hasKey = true;
             Destroy(gameObject);
         }
         public void Highlight()

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 34a9d1f6e1e346e4e9ba87ea88ac40b2, type: 3}
-  m_Name: Gram_Intro
+  m_Name: Lady_Poster_Intro
   m_EditorClassIdentifier: Assembly-CSharp::FpsHorrorKit.DialogueData
   characterName: Old Lady
   isAutoAdvance: 0
@@ -18,9 +18,13 @@ MonoBehaviour:
   useThisAutoAdvanceSpeed: 1
   autoAdvanceSpeed: 30
   dialogueLines:
-  - Oh hey dear, what are you doing all the way out here?
-  - Oh thats terrible, you must of got all turned around looking for those to end
-    up here. It's too late for you to go searching again. You can stay here for the
-    time being
-  - Would you mind helping me out while your here?
+  - ...Oh.
+  - Hello dear, what brings you out here?
+  - "Well You\u2019re a long way from the trail then, aren\u2019t you?"
+  - Uhm why don't you come in before something sees you, just don't mind the smell
+    the wildlife have been around here a lot lately
+  - Uhm why don't you come in before something sees you, just don't mind the smell
+    the wildlife have been around here a lot lately
+  - Ever since my husband left i haven't been able to take care of things. Would
+    you mind putting up these flyers around my cabin for me?
   audioClips: []

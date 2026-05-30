@@ -49,10 +49,6 @@ public class MonsterAI : MonoBehaviour
         // Check if player is looking at monster
         CheckIfLookedAt();
 
-        // =========================
-        // FLEEING
-        // =========================
-
         if (isFleeing)
         {
             fleeTimer -= Time.deltaTime;
@@ -73,10 +69,6 @@ public class MonsterAI : MonoBehaviour
             return;
         }
 
-        // =========================
-        // REPOSITIONING
-        // =========================
-
         if (isRepositioning)
         {
             agent.isStopped = false;
@@ -95,10 +87,6 @@ public class MonsterAI : MonoBehaviour
 
             return;
         }
-
-        // =========================
-        // NORMAL AI BEHAVIOUR
-        // =========================
 
         // Too far away -> move closer
         if (distance > avoidDistance + stopRange)

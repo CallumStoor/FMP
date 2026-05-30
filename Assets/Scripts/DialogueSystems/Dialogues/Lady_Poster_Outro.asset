@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 34a9d1f6e1e346e4e9ba87ea88ac40b2, type: 3}
-  m_Name: OldLady_PinPoster
+  m_Name: Lady_Poster_Outro
   m_EditorClassIdentifier: Assembly-CSharp::FpsHorrorKit.DialogueData
   characterName: ???
   isAutoAdvance: 0
@@ -18,7 +18,9 @@ MonoBehaviour:
   useThisAutoAdvanceSpeed: 1
   autoAdvanceSpeed: 35
   dialogueLines:
-  - Oh hello dear, what brings you out here
-  - Oh no thats terrible, would you like to stay here?
-  - Well as long as your here would you mind helping me put up some flyers
+  - "You followed the deer, didn\u2019t you? They always do. Sorry that was out of
+    the blue. "
+  - We have had a lot of people end up here
+  - Well i think it's too dark to go wondering back into the woods now so as you
+    helped me. I'll alow you to stay tonight
   audioClips: []

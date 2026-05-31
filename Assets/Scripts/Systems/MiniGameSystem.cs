@@ -7,21 +7,16 @@ using UnityEngine.Windows;
 public class MiniGameSystem : MonoBehaviour, IInteractable
 {
     [SerializeField] private string interactText = "Open MiniGame";
-
     [Header("Prefabs")]
     [SerializeField] private GameObject panelPrefab;
     [SerializeField] private Transform panelPrefabPosition;
     [SerializeField] private GameObject completePrefab;
-
     private FpsController fpsController;
     private GameObject minigame;
-    
-
     private void Awake()
     {
         fpsController = FindAnyObjectByType<FpsController>();
     }
-
     public void Interact()
     { 
         Cursor.lockState = CursorLockMode.None;
@@ -48,7 +43,7 @@ public class MiniGameSystem : MonoBehaviour, IInteractable
     }
     public void Highlight()
     {
-        PlayerInteract.Instance.ChangeInteractText(interactText); // Updates the UI text when Highlighting the object
+        PlayerInteract.Instance.ChangeInteractText(interactText);
     }
 
     public void HoldInteract() { }

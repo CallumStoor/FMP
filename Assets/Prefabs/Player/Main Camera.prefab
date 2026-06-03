@@ -315,7 +315,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7610602226129060551
 Transform:
   m_ObjectHideFlags: 0
@@ -439,7 +439,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1066581358048536934, guid: 6643704503cd0ff4c90cc8a681153469, type: 3}
       propertyPath: m_Intensity
-      value: 123.7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1066581358048536934, guid: 6643704503cd0ff4c90cc8a681153469, type: 3}
       propertyPath: m_SpotAngle
@@ -459,7 +459,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1151249735855265964, guid: 6643704503cd0ff4c90cc8a681153469, type: 3}
       propertyPath: m_Intensity
-      value: 34.1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1151249735855265964, guid: 6643704503cd0ff4c90cc8a681153469, type: 3}
       propertyPath: m_SpotAngle

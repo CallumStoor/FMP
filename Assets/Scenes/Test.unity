@@ -14,10 +14,10 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 10
-  m_Fog: 0
+  m_Fog: 1
   m_FogColor: {r: 0, g: 0, b: 0, a: 1}
-  m_FogMode: 3
-  m_FogDensity: 0.035
+  m_FogMode: 2
+  m_FogDensity: 0.02
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0, g: 0, b: 0, a: 1}
@@ -161,14 +161,14 @@ MonoBehaviour:
   sounds:
   - clip: {fileID: 8300000, guid: 6e8044a5cd9148342a517100a2ba4cda, type: 3}
     name: NatureAmbience
-    volume: 0.345
+    volume: 0.245
     pitch: 1
     loop: 1
     Background: 1
     source: {fileID: 0}
   - clip: {fileID: 8300000, guid: 01173ae9c6956114996397daf2e726ef, type: 3}
     name: WindBlowing
-    volume: 0.345
+    volume: 0.245
     pitch: 1
     loop: 1
     Background: 1
@@ -177,7 +177,7 @@ MonoBehaviour:
     name: CrowCaw
     volume: 1
     pitch: 1
-    loop: 1
+    loop: 0
     Background: 0
     source: {fileID: 0}
   - clip: {fileID: 8300000, guid: 6a45608a6c636f04687eca5d4d20b9a0, type: 3}
@@ -194,7 +194,7 @@ MonoBehaviour:
     loop: 1
     Background: 0
     source: {fileID: 0}
-  - clip: {fileID: 8300000, guid: d07fe4b24e274ca45a3d3cac38c30705, type: 3}
+  - clip: {fileID: 8300000, guid: cd366c0f5af405944a50361c7b924fdc, type: 3}
     name: HammerHit
     volume: 1
     pitch: 1
@@ -895,7 +895,7 @@ Light:
   serializedVersion: 12
   m_Type: 1
   m_Color: {r: 0.21383637, g: 0.21383637, b: 0.21383637, a: 1}
-  m_Intensity: 0.38
+  m_Intensity: 0.1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -2098,6 +2098,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1568279953623812200, guid: 3e4263bb9d8588149ad8293611d2728f, type: 3}
+      propertyPath: m_Acceleration
+      value: 99
+      objectReference: {fileID: 0}
+    - target: {fileID: 4054569753459541538, guid: 3e4263bb9d8588149ad8293611d2728f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4581321918338485368, guid: 3e4263bb9d8588149ad8293611d2728f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.3
@@ -2150,6 +2158,10 @@ PrefabInstance:
       propertyPath: playerCamera
       value: 
       objectReference: {fileID: 1847586531}
+    - target: {fileID: 6164486875916260247, guid: 3e4263bb9d8588149ad8293611d2728f, type: 3}
+      propertyPath: avoidDistance
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -4,3 +4,6 @@ Mouse - Look around
 E - Interact with objects
 Space - Jump
 Escape - Pause menu
+
+
+Make AI invisible to the player until a certain quest is complete. then change the AI to be more distant from the player

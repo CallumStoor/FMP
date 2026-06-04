@@ -18,4 +18,4 @@ MonoBehaviour:
   questStepsPrefab:
   - {fileID: 2087079166923326725, guid: 1e6af08361391b74eabc3f397062cde1, type: 3}
   introDialogue: {fileID: 11400000, guid: 646bed7f13e05ca4e91a69e00b9df572, type: 2}
-  completionDialogue: {fileID: 0}
+  completionDialogue: {fileID: 11400000, guid: c251b5e140a80e84ea1a87de071be8d8, type: 2}

@@ -6,6 +6,7 @@ public class MonsterAI : MonoBehaviour
     [Header("References")]
     [SerializeField] private Transform target;
     [SerializeField] private Camera playerCamera;
+    [SerializeField] private AudioSource audioSource;
 
     [Header("Distance")]
     [SerializeField] private float avoidDistance = 10f;
@@ -28,6 +29,7 @@ public class MonsterAI : MonoBehaviour
 
     private bool isFleeing;
     private bool isRepositioning;
+    private bool alternatePlay;
 
     private Vector3 repositionTarget;
 
@@ -94,7 +96,7 @@ public class MonsterAI : MonoBehaviour
             agent.isStopped = false;
             agent.SetDestination(target.position);
 
-            FaceMovementDirection();
+            FaceTarget();
         }
 
         // Within ideal range -> stop and look at player
@@ -104,6 +106,12 @@ public class MonsterAI : MonoBehaviour
             agent.isStopped = true;
 
             FaceTarget();
+
+            if (!audioSource.isPlaying && alternatePlay)
+            {
+                audioSource.pitch = Random.Range(0.7f, 0.85f);
+                audioSource.Play();
+            }
         }
 
         // Too close -> move away
@@ -119,7 +127,7 @@ public class MonsterAI : MonoBehaviour
 
             agent.SetDestination(newPosition);
 
-            FaceMovementDirection();
+            FaceTarget();
         }
     }
 
@@ -157,6 +165,7 @@ public class MonsterAI : MonoBehaviour
             {
                 isFleeing = true;
                 fleeTimer = fleeDuration;
+                alternatePlay = !alternatePlay;
             }
         }
         else

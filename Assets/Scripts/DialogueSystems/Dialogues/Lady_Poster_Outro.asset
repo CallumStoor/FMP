@@ -18,9 +18,9 @@ MonoBehaviour:
   useThisAutoAdvanceSpeed: 1
   autoAdvanceSpeed: 35
   dialogueLines:
-  - "You followed the deer, didn\u2019t you? They always do. Sorry that was out of
-    the blue. "
-  - We have had a lot of people end up here
+  - 'I am still looking for him. Hes been gone for a week now and i worry. '
+  - We have had a lot of people end up here, you followed that dear didn't you? most
+    people tend too.
   - Well i think it's too dark to go wondering back into the woods now so as you
     helped me. I'll alow you to stay tonight
   audioClips: []

@@ -18,11 +18,7 @@ MonoBehaviour:
   useThisAutoAdvanceSpeed: 1
   autoAdvanceSpeed: 35
   dialogueLines:
-  - "You followed the deer, didn\u2019t you? They always do. Sorry that was out of
-    the blue. "
-  - We have had a lot of people end up here
-  - Well i think it's too dark to go wondering back into the woods now so as you
-    helped me. I'll alow you to stay tonight
+  - 'I hope its not a pain to ask but could you do some other things for me? '
   - We will need some wood to burn tonight. Go get me some sticks and we can start
     a fire, just don't be alone too long
   audioClips: []

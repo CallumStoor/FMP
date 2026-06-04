@@ -8,7 +8,9 @@ namespace FpsHorrorKit
 
         public void Interact()
         {
-            Destroy(gameObject);
+            GameEventsManager.instance.minigameEvents.minigameComplete("CollectMinigame");
+
+            gameObject.SetActive(false);
         }
         public void Highlight()
         {

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bfaeb81e245c724e96093017e75e07d, type: 3}
+  m_Name: CollectStickQuest
+  m_EditorClassIdentifier: Assembly-CSharp::QuestInfoSO
+  <id>k__BackingField: CollectStickQuest
+  displayName: Collect some Sticks
+  questPrerequisites: []
+  questStepsPrefab:
+  - {fileID: 2087079166923326725, guid: 1e6af08361391b74eabc3f397062cde1, type: 3}
+  introDialogue: {fileID: 11400000, guid: 646bed7f13e05ca4e91a69e00b9df572, type: 2}
+  completionDialogue: {fileID: 0}

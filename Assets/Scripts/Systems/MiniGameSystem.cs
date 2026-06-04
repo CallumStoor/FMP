@@ -21,6 +21,7 @@ public class MiniGameSystem : MonoBehaviour, IInteractable
     { 
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+        fpsController.isInteracting = true;
         minigame = Instantiate(panelPrefab, panelPrefabPosition);
         MinigameHammer hammer = minigame.GetComponent<MinigameHammer>();
         hammer.SetOwner(this);

@@ -71,6 +71,7 @@ namespace FpsHorrorKit
             HandleGravity();
             HandleJumping();
             GroundedCheck();
+
         }
         private void LateUpdate()
         {
@@ -169,6 +170,7 @@ namespace FpsHorrorKit
             headBob.AmplitudeGain = Mathf.Lerp(headBob.AmplitudeGain, targetAmp, Time.deltaTime * headBobAcceleration);
             headBob.FrequencyGain = Mathf.Lerp(headBob.FrequencyGain, targetFreq, Time.deltaTime * headBobAcceleration);
         }
+
         private void OnDrawGizmosSelected()
         {
             Color transparentGreen = new Color(0.0f, 1.0f, 0.0f, 0.35f);

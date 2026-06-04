@@ -19,6 +19,7 @@ namespace FpsHorrorKit
 
         public bool fire;
         public bool fKey;
+        public bool escapeKey;
 
         [Header("Mouse Cursor Settings")]
         public bool cursorLocked = true;
@@ -70,6 +71,11 @@ namespace FpsHorrorKit
             StopInteractInput(value.isPressed);
         }
 
+        public void OnKeyEscape(InputValue value)
+        {
+            EscapeKeyInput(value.isPressed);
+        }
+
         public void OnKeyF(InputValue value)
         {
             fKey = !fKey;
@@ -83,6 +89,7 @@ namespace FpsHorrorKit
         private void FireInput(bool fireInput) => fire = fireInput;
         private void InteractInput(bool interactInput) => interact = interactInput;
         private void StopInteractInput(bool stopInteractInput) => stopInteract = stopInteractInput;
+        private void EscapeKeyInput(bool escapeKeyInput) => escapeKey = escapeKeyInput;
 
 
         private void OnApplicationFocus(bool hasFocus)

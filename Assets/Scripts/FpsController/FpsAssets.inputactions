@@ -131,6 +131,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "EscapeKey",
+                    "type": "Button",
+                    "id": "e78784dc-501f-4c0b-8401-069957fcc3ac",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -329,6 +338,17 @@
                     "processors": "",
                     "groups": ";Keyboard & Mouse",
                     "action": "KeyF",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0cfe551a-6a73-470f-8df4-a0beaa9c9fff",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard & Mouse",
+                    "action": "EscapeKey",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -3,3 +3,4 @@ WASD - Move
 Mouse - Look around
 E - Interact with objects
 Space - Jump
+Escape - Pause menu
